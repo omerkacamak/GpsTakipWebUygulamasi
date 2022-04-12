@@ -1,0 +1,15 @@
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.data.deps.json
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.data.runtimeconfig.json
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.data.runtimeconfig.dev.json
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.data.dll
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.data.pdb
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.csprojAssemblyReference.cache
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.AssemblyInfoInputs.cache
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.AssemblyInfo.cs
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.csproj.CoreCompileInputs.cache
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.csproj.CopyComplete
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.dll
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.pdb
+C:\Users\90545\Desktop\yazlabGps\proje.data\obj\Debug\netcoreapp3.1\proje.data.genruntimeconfig.cache
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.entity.dll
+C:\Users\90545\Desktop\yazlabGps\proje.data\bin\Debug\netcoreapp3.1\proje.entity.pdb

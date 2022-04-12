@@ -1,0 +1,32 @@
+@using Microsoft.AspNetCore.Http
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+    string kullaniciAdi= Context.Session.GetString("kullaniciAdi");
+    var kullaniciId = Context.Session.GetInt32("id");
+    var qe = 3; 
+}
+
+
+
+
+<form action="" method="POST">
+     <div class="form-group">
+        <label for="name">Name</label>
+       <input type="text" name="name" class="form-control" >
+
+    </div>
+
+    <div class="form-group">
+        <label for="sifre">Şifre</label>
+        <input type="password" name="sifre" class="form-control" >
+        
+    </div>
+
+    <button type="submit" class="btn btn-danger">Submit</button>
+</form>
+
+
+----->>>> @ViewBag.errx

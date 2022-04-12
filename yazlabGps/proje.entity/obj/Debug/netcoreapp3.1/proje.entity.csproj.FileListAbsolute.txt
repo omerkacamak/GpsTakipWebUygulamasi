@@ -1,0 +1,9 @@
+C:\Users\90545\Desktop\yazlabGps\proje.entity\bin\Debug\netcoreapp3.1\proje.entity.deps.json
+C:\Users\90545\Desktop\yazlabGps\proje.entity\bin\Debug\netcoreapp3.1\proje.entity.dll
+C:\Users\90545\Desktop\yazlabGps\proje.entity\bin\Debug\netcoreapp3.1\proje.entity.pdb
+C:\Users\90545\Desktop\yazlabGps\proje.entity\obj\Debug\netcoreapp3.1\proje.entity.csprojAssemblyReference.cache
+C:\Users\90545\Desktop\yazlabGps\proje.entity\obj\Debug\netcoreapp3.1\proje.entity.AssemblyInfoInputs.cache
+C:\Users\90545\Desktop\yazlabGps\proje.entity\obj\Debug\netcoreapp3.1\proje.entity.AssemblyInfo.cs
+C:\Users\90545\Desktop\yazlabGps\proje.entity\obj\Debug\netcoreapp3.1\proje.entity.csproj.CoreCompileInputs.cache
+C:\Users\90545\Desktop\yazlabGps\proje.entity\obj\Debug\netcoreapp3.1\proje.entity.dll
+C:\Users\90545\Desktop\yazlabGps\proje.entity\obj\Debug\netcoreapp3.1\proje.entity.pdb

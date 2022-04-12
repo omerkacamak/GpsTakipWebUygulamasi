@@ -1,0 +1,228 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.webui\\proje.webui.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.data\\proje.data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.data\\proje.data.csproj",
+        "projectName": "proje.data",
+        "projectPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.data\\proje.data.csproj",
+        "packagesPath": "C:\\Users\\90545\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\90545\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj": {
+                "projectPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkcore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.416, )"
+            },
+            "Microsoft.EntityFrameworkcore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.416, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.416, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj",
+        "projectName": "proje.entity",
+        "projectPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj",
+        "packagesPath": "C:\\Users\\90545\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\90545\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.webui\\proje.webui.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.webui\\proje.webui.csproj",
+        "projectName": "proje.webui",
+        "projectPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.webui\\proje.webui.csproj",
+        "packagesPath": "C:\\Users\\90545\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.webui\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\90545\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.data\\proje.data.csproj": {
+                "projectPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.data\\proje.data.csproj"
+              },
+              "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj": {
+                "projectPath": "C:\\Users\\90545\\Desktop\\yazlabGps\\proje.entity\\proje.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkcore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.416, )"
+            },
+            "Microsoft.EntityFrameworkcore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.416, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.416, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

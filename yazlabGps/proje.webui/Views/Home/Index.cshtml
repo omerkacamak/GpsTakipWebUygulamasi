@@ -1,0 +1,233 @@
+﻿@using Microsoft.AspNetCore.Http
+@model KullaniciModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+    string kullaniciAdi= Context.Session.GetString("kullaniciAdi");
+    var kullaniciId = Context.Session.GetInt32("id");
+    var qe = 3; 
+}
+
+<script>
+    
+</script>
+<div class="text-center">
+    <h1 class="display-4">Welcome @kullaniciAdi   @kullaniciId  @Model.KullaniciArabalarim[0].Araba.isim</h1>
+    
+    <H4>ARAÇLARIN SON 30 DAKİKA VERİLERİ</H4>
+
+
+    <form asp-action="TarihYolu" asp-controller="Home" method="post">
+        <input type="text" name="idKul" value="@kullaniciId" style="display: none;">
+        <input type="text" name="car" id="" value="@Model.KullaniciArabalarim[0].Araba.isim">
+        <select name="tarihim" id="gola" class="form-select form-select-lg mb-3" >
+            @foreach (var item in Model.forDate1)
+            {
+                <option  value="@item" >@item</option>
+            }
+        </select>
+
+        <select name="ilk" id="" class="form-select form-select-lg mb-3" >
+            @foreach (var item in Model.forHour2)
+            {
+                 <option value="@item:00">@item:00</option>
+            }
+        </select>
+
+        <select name="son" id="" class="form-select form-select-lg mb-3" >
+            @foreach (var item in Model.forHour2)
+            {
+                 <option value="@item:00">@item:00</option>
+            }
+        </select>
+
+           
+
+        <button class="btn btn-success" type="submit">Seç</button>
+    </form>
+
+
+<form asp-action="TarihYolu" asp-controller="Home" method="post">
+    <input type="text" name="idKul" value="@kullaniciId" style="display: none;">
+      <input type="text" name="car" id="" value="@Model.KullaniciArabalarim[1].Araba.isim">
+        <select name="tarihim" id="gola" class="form-select form-select-lg mb-3" >
+            @foreach (var item in Model.forDate2)
+            {
+                <option  value="@item" >@item</option>
+            }
+            
+        </select>
+
+        <select name="ilk" id="" class="form-select form-select-lg mb-3" >
+            @foreach (var item in Model.forHour1)
+            {
+                 <option value="@item:00">@item:00</option>
+            }
+        </select>
+
+        <select name="son" id="" class="form-select form-select-lg mb-3" >
+           @foreach (var item in Model.forHour1)
+            {
+                 <option value="@item:00">@item:00</option>
+            }
+        </select>
+
+          
+
+        <button class="btn btn-success" type="submit">Seç</button>
+    </form>
+
+
+
+
+
+<div class="" style="width: 600; height: 600;">
+
+<div id="map" style="width: ; height: 600px;"></div>
+</div>
+
+<script>
+     @* $('#gel').click(function(){
+        let tete={
+            A:"sad",
+            B:"happy"
+        };
+       $.ajax({
+            contentType:"application/json; charset=utf-8;",
+            type:"post",
+            url:"/Home/Gonderdi",
+            dataType:"json",
+            data:tete,
+            success:function(func){
+            let result =jQuery.parseJSON(func);
+           // alert("ssss");
+            console.log(result);
+            }
+       }); 
+    }); *@
+
+@*     
+$( '#gola' )
+  .change(function() {
+    let yazim ="hm";
+    $( "#gola option:selected" ).each(function() {
+      yazim = $( this ).text();
+    });
+ 
+  });
+ let str = "falco";
+ $.ajax({
+       contentType:"application/json; charset=utf-8;",
+        type:"POST",
+        url:"/Home/Toto"+5,
+        dataType:"json",
+        success:function(func){
+            let result =jQuery.parseJSON(func);
+            alert("ssss");
+        }
+});  *@
+
+
+
+    var latdizi = [];
+var longdizi = [];
+  var latdizi2 = [];
+var longdizi2 = [];
+var ut=0;
+var utx=0;
+</script>
+
+
+@foreach (var item in Model.SonOtuz[0])
+{
+
+    <script>
+        longdizi[ut]=parseFloat(@item.longi.Replace(',','.'));
+        latdizi[ut]=parseFloat(@item.lati.Replace(',','.'));
+        @* console.log(longdizi[ut] + "-- " + ut); *@
+        ut++;
+        
+    </script>
+}
+
+
+@foreach (var item in Model.SonOtuz[1])
+{
+
+    <script>
+        longdizi2[utx]=parseFloat(@item.longi.Replace(',','.'));
+        latdizi2[utx]=parseFloat(@item.lati.Replace(',','.'));
+        @* console.log(longdizi[ut] + "-- " + ut); *@
+        utx++;
+        
+    </script>
+}
+
+
+
+<script>
+   var dizim =[];
+   var dizim2=[];
+   
+    
+    for(i=0; i<@Model.SonOtuz[0].Count-1; i++)
+    {
+        dizim[i]=new Array(latdizi[i],longdizi[i])
+        
+    }
+      for(i=0; i<@Model.SonOtuz[1].Count-1; i++)
+    {
+        dizim2[i]=new Array(latdizi2[i],longdizi2[i])
+        
+    }
+    
+
+   
+    
+</script>
+
+
+
+<script>
+
+
+
+
+var q=0;
+
+
+
+
+    var map =L.map('map').setView([0,0],1);
+   @* var map = L.map('map', {
+    center: [51.505, -0.09],
+    minZoom:2,
+    maxBoundsViscosity: 1,
+    zoom: 150
+}); *@
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=1q57WbmlSYAqAdNknYN8',{
+        attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+    }).addTo(map);
+    var marker = L.marker(dizim[0]).addTo(map).bindPopup("<h3>@Model.KullaniciArabalarim[0].Araba.isim</h3> <h5>@Model.SonOtuz[0][0].tarih </h5>");
+   var marker1 = L.marker(dizim[dizim.length-1]).addTo(map).bindPopup("<h3>@Model.KullaniciArabalarim[0].Araba.isim</h3> <h5>@Model.SonOtuz[0][@Model.SonOtuz[0].Count-1].tarih </h5>");
+
+    var marker2 = L.marker(dizim2[0]).addTo(map).bindPopup("<h5>@Model.KullaniciArabalarim[1].Araba.isim</h5> <h3>@Model.SonOtuz[1][0].tarih </h3>");
+    var marker3 = L.marker(dizim2[dizim2.length-1]).addTo(map).bindPopup("<h3>@Model.KullaniciArabalarim[1].Araba.isim</h3> <h5>@Model.SonOtuz[1][@Model.SonOtuz[1].Count-1].tarih </h5>");
+
+    @* var latlngs = [
+    [bir,iki],
+    [uc, dort],
+    [bes,alti],     
+]; *@
+ 
+
+ var polyline = L.polyline(dizim, {color: 'red'}).addTo(map);
+ var polyline2 = L.polyline(dizim2, {color: 'green'}).addTo(map);
+map.fitBounds(polyline.getBounds());
+map.fitBounds(polyline2.getBounds());
+
+</script>
+
+
+</div>
